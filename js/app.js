@@ -1,3 +1,3 @@
 (function(){
-    alert("Hi");
+    $.material.init()
 })();
