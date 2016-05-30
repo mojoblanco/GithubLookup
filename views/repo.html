@@ -1,0 +1,7 @@
+<h3>{{repoDetails.name}}</h3>
+<em>{{repoDetails.subscribers_count}}</em>
+
+<p ng-repeat="contributor in contributors">
+    {{contributor.login}}
+    <img ng-src="{{contributor.avatar_url}}" title="{{contributor.name}}" height="80">
+</p>
