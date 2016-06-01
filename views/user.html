@@ -1,13 +1,16 @@
-{{error}}
+<div class="row">
+    <div class="col-md-12">
+        {{error}}
 
-<div ng-show="user">
-    <h3>{{user.name}}</h3>
-    <img ng-src="{{user.avatar_url}}" title="{{user.name}}" height="80">
-    <a href="{{user.html_url}}">Account</a> | <a href="{{user.blog}}">Website</a>
-    <br>
-    {{user.location}}, {{user.email}}
+        <div ng-show="user">
+            <h3>{{user.name}}</h3>
+            <img ng-src="{{user.avatar_url}}" title="{{user.name}}" height="80">
+            <br>
+            {{user.location}}, {{user.email}}
+        </div>
+        
+        <div ng-include="'views/inc/repos.html'" ng-show="repos.length"></div>
+        
+        <a href="/#main" class="btn btn-warning">Back to search</a>
+    </div>
 </div>
-
-<div ng-include="'views/inc/repos.html'" ng-show="repos.length"></div>
-
-<a href="/#main">Back to search</a>
