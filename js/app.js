@@ -20,5 +20,13 @@
                 redirectTo:     "/main"
             });
     });
+
+    app.controller('HeadingController', function ($scope) {
+        $scope.appName = "Github Lookup";
+    });
+
+    app.controller('FooterController', function ($scope) {
+        $scope.date = new Date();
+    });
     
 }());

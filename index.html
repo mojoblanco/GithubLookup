@@ -26,10 +26,26 @@
             
     </head>
     <body>
-        
-        <section class="container">    
-            <h2>Github Lookup</h2>
-            <div ng-view></div>
+        <section class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div class="panel panel-default text-center">
+                        <div ng-controller="HeadingController" class="panel-heading">
+                            <h3>
+                                {{appName}}
+                            </h3>
+                        </div>
+
+                        <div class="panel-body">
+                            <ng-view></ng-view>
+                        </div>
+
+                        <div ng-controller="FooterController" class="panel-footer">
+                            &copy;{{date | date:'yyyy'}} MOBB
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </body>
