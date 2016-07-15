@@ -26,7 +26,7 @@
         };
         
         
-        $scope.username = "angular";
+        $scope.username = "mojoblanco";
     };
     
     //Register Controllers
